@@ -7,7 +7,7 @@ export default function BigNum() {
   const [a, setA] = useState("12345678901234567890");
   const [b, setB] = useState("98765432109876543210");
   let add = "—", sub = "—", mul = "—", div = "—";
-  try { const A = BigInt(a), B = BigInt(b); add = (A + B).toString(); sub = (A - B).toString(); mul = (A * B).toString(); div = B === 0n ? "—" : (A / B).toString(); } catch {}
+  try { const A = BigInt(a), B = BigInt(b); add = (A + B).toString(); sub = (A - B).toString(); mul = (A * B).toString(); div = B === 0n ? "—" : (A / B).toString(); } catch (_e) { /* invalid BigInt input */ }
   return (
     <CalcShell meta={meta} about={<p>Arbitrary-precision integer arithmetic using JavaScript BigInt. Supports very large whole numbers.</p>}>
       <Two

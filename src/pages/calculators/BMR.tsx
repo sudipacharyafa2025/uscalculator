@@ -25,11 +25,11 @@ export default function BMR() {
     const cm = unit === "metric" ? hCm : (hFt * 12 + hIn) * 2.54;
     const kg = unit === "metric" ? wKg : wLb * 0.453592;
     const lean = kg * (1 - bf / 100);
-    let mifflin = 10 * kg + 6.25 * cm - 5 * age + (sex === "male" ? 5 : -161);
-    let harris = sex === "male"
+    const mifflin = 10 * kg + 6.25 * cm - 5 * age + (sex === "male" ? 5 : -161);
+    const harris = sex === "male"
       ? 88.362 + 13.397 * kg + 4.799 * cm - 5.677 * age
       : 447.593 + 9.247 * kg + 3.098 * cm - 4.330 * age;
-    let katch = 370 + 21.6 * lean;
+    const katch = 370 + 21.6 * lean;
     return { mifflin, harris, katch, value: formula === "mifflin" ? mifflin : formula === "harris" ? harris : katch };
   }, [sex, age, unit, hCm, wKg, hFt, hIn, wLb, formula, bf]);
 
