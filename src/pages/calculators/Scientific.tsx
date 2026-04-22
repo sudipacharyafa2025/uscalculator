@@ -18,7 +18,6 @@ function evaluate(expr: string): string {
   try {
     let e = expr.replace(/×/g, "*").replace(/÷/g, "/").replace(/−/g, "-").replace(/\^/g, "**");
     e = e.replace(/π/g, "pi");
-    // eslint-disable-next-line no-new-func
     const f = new Function(...Object.keys(FN), `return (${e});`);
     const v = f(...Object.values(FN));
     if (typeof v !== "number" || !isFinite(v)) return "Error";
