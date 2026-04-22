@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uscalculator.online/sitemap.xml

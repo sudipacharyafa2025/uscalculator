@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="shell" x1="96" y1="88" x2="416" y2="420" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#0b2d6f"/>
+			<stop offset="0.45" stop-color="#1f6fbf"/>
+			<stop offset="1" stop-color="#9fe6df"/>
+		</linearGradient>
+		<linearGradient id="panel" x1="148" y1="126" x2="366" y2="382" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1d4f86"/>
+			<stop offset="1" stop-color="#7ee0df"/>
+		</linearGradient>
+		<linearGradient id="screen" x1="180" y1="146" x2="332" y2="230" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#f4fbff"/>
+			<stop offset="1" stop-color="#d6f0ff"/>
+		</linearGradient>
+	</defs>
+	<rect width="512" height="512" rx="96" fill="#f6fbff"/>
+	<path d="M256 26L470 150V362L256 486L42 362V150L256 26Z" fill="url(#shell)"/>
+	<path d="M256 70L428 170V342L256 442L84 342V170L256 70Z" fill="#102f78" opacity="0.86"/>
+	<path d="M84 170L256 70V442L84 342V170Z" fill="#64d7cd" opacity="0.28"/>
+	<path d="M428 170L256 70V442L428 342V170Z" fill="#b1f2ef" opacity="0.36"/>
+	<rect x="132" y="130" width="248" height="252" rx="28" fill="url(#panel)" stroke="#b5f6f2" stroke-width="12"/>
+	<rect x="154" y="152" width="204" height="72" rx="14" fill="url(#screen)"/>
+	<path d="M216 178H294C300.627 178 306 183.373 306 190V190C306 196.627 300.627 202 294 202H216C209.373 202 204 196.627 204 190V190C204 183.373 209.373 178 216 178Z" fill="#153c82" opacity="0.14"/>
+	<text x="256" y="202" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#0b1940">1234.5</text>
+	<g fill="#f3fbff">
+		<rect x="157" y="244" width="58" height="58" rx="10"/>
+		<rect x="227" y="244" width="58" height="58" rx="10"/>
+		<rect x="297" y="244" width="58" height="58" rx="10"/>
+		<rect x="157" y="316" width="58" height="58" rx="10"/>
+		<rect x="227" y="316" width="58" height="58" rx="10"/>
+		<rect x="297" y="316" width="58" height="58" rx="10"/>
+	</g>
+	<g stroke="#102b63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M175 273H197"/>
+		<path d="M186 262V284"/>
+		<path d="M245 273H267"/>
+		<path d="M175 345L197 367"/>
+		<path d="M197 345L175 367"/>
+		<path d="M246 345H266"/>
+		<path d="M246 362H266"/>
+		<path d="M317 345H335"/>
+		<path d="M317 362H335"/>
+		<path d="M317 375H335"/>
+	</g>
+</svg>
